@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="CourseProject.UserControls.VisitUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CourseProject.UserControls"
+             mc:Ignorable="d" Background="White" Height="278" Width="649">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="235*"/>
+            <ColumnDefinition Width="447*"/>
+            <ColumnDefinition Width="71*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <StackPanel>
+                <TextBlock Text="Услуга:" Margin="20,10,0,0"/>
+                <TextBlock Text="Врач:" Margin="20,30,0,0"/>
+                <TextBlock Text="Номер медицинской карты:" Margin="20,30,0,0"/>
+                <TextBlock Text="ФИО пациента:" Margin="20,30,0,0"/>
+                <TextBlock Text="Дата и время посещения:" Margin="20,30,0,0"/>
+                <TextBlock Text="Стоимость услуг" Margin="20,30,0,0"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1">
+            <StackPanel>
+                <TextBlock x:Name="textBlockService" Margin="20,10,0,0"/>
+                <TextBlock x:Name="textBlockDoctor" Margin="20,30,0,0"/>
+                <TextBlock x:Name="textBlockNumberMedicalCard" Margin="20,30,0,0"/>
+                <TextBlock x:Name="textBlockFioPatient" Margin="20,30,0,0"/>
+                <TextBlock x:Name="textBlockDateVisit" Margin="20,30,0,0"/>
+                <TextBlock x:Name="textBlockCostVisit" Margin="20,30,0,0"/>
+
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="2">
+            <Button x:Name="buttonCanselRecord" Content="Отменить" Height="25" Width="60" VerticalAlignment="Bottom" Margin="0,0,0,15" Click="buttonCanselRecord_Click"/>
+        </Grid>
+    </Grid>
+</UserControl>
